@@ -1,7 +1,17 @@
 package com.userdept.entities;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GeneratedValue;
+import javax.persistence.id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "tb_department")
 public class Department {
 
+    @id
+    @GeneratedValue(strategy = GenerationType.Identity)
     private Long id;
     private String name;
 
